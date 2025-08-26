@@ -3,7 +3,7 @@
     "name": "GCC Bartman m68k Win32",
     "toolchainFile": "${workspaceFolder}/external/AmigaCMakeCrossToolchains/m68k-bartman.cmake",
     "environmentVariables": {
-      "PATH": "${command:amiga.bin-path}/opt/bin;${command:amiga.bin-path};${command:amiga.bin-path}/opt/m68k-amiga-elf/bin;${env:PATH}"
+      "PATH": "${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin;${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin;${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/m68k-amiga-elf/bin;${env:PATH}"
     },
     "preferredGenerator": {
       "name": "MinGW Makefiles"
@@ -11,7 +11,7 @@
     "cmakeSettings": {
       "M68K_CPU": "68020",
       "TOOLCHAIN_PREFIX": "m68k-amiga-elf",
-      "TOOLCHAIN_PATH": "${command:amiga.bin-path}/opt"
+      "TOOLCHAIN_PATH": "${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
     },
     "keep": true
   },
@@ -19,7 +19,7 @@
     "name": "GCC Bartman m68k Unix",
     "toolchainFile": "${workspaceFolder}/external/AmigaCMakeCrossToolchains/m68k-bartman.cmake",
     "environmentVariables": {
-      "PATH": "${command:amiga.bin-path}/opt/bin:${command:amiga.bin-path}:${command:amiga.bin-path}/opt/m68k-amiga-elf/bin:${env:PATH}"
+      "PATH": "${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin:${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin:${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/m68k-amiga-elf/bin:${env:PATH}"
     },
     "preferredGenerator": {
       "name": "Unix Makefiles"
@@ -27,7 +27,7 @@
     "cmakeSettings": {
       "M68K_CPU": "68020",
       "TOOLCHAIN_PREFIX": "m68k-amiga-elf",
-      "TOOLCHAIN_PATH": "${command:amiga.bin-path}/opt"
+      "TOOLCHAIN_PATH": "${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
     },
     "keep": true
   }

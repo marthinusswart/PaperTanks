@@ -1,0 +1,1809 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic -  - m68k
+      The host system is: Darwin - 24.6.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc 
+      Build flags: -MP;-MMD;-m68000;-fomit-frame-pointer;-nostdlib;-Wno-unused-function;-Wno-volatile-register-var;-fno-tree-loop-distribution;-flto;-fwhole-program;-fdata-sections;-ffunction-sections
+      Id flags:  
+      
+      The output was:
+      0
+      /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 80000074
+      /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 80000074
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a-CMakeCCompilerId.d"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification could not be found in:
+        /Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/4.1.0/CompilerIdC/a-CMakeCCompilerId.d
+      
+      The C compiler identification is GNU, found in:
+        /Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/4.1.0/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-ar"
+      - "ar"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-ar"
+      - "/opt/homebrew/bin/m68k-amiga-elf-ar"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-ar"
+      - "/usr/local/bin/m68k-amiga-elf-ar"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-ar"
+      - "/usr/bin/m68k-amiga-elf-ar"
+      - "/bin/m68k-amiga-elf-ar"
+      - "/usr/sbin/m68k-amiga-elf-ar"
+      - "/sbin/m68k-amiga-elf-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-ar"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-ar"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-ar"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-ar"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/ar"
+      - "/opt/homebrew/bin/ar"
+      - "/opt/homebrew/sbin/ar"
+      - "/usr/local/bin/ar"
+      - "/System/Cryptexes/App/usr/bin/ar"
+    found: "/usr/bin/ar"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-ranlib"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-ranlib"
+      - "/opt/homebrew/bin/m68k-amiga-elf-ranlib"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-ranlib"
+      - "/usr/local/bin/m68k-amiga-elf-ranlib"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-ranlib"
+      - "/usr/bin/m68k-amiga-elf-ranlib"
+      - "/bin/m68k-amiga-elf-ranlib"
+      - "/usr/sbin/m68k-amiga-elf-ranlib"
+      - "/sbin/m68k-amiga-elf-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-ranlib"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-ranlib"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-ranlib"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-ranlib"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/ranlib"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/ranlib"
+      - "/opt/homebrew/bin/ranlib"
+      - "/opt/homebrew/sbin/ranlib"
+      - "/usr/local/bin/ranlib"
+      - "/System/Cryptexes/App/usr/bin/ranlib"
+    found: "/usr/bin/ranlib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-strip"
+      - "strip"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-strip"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-strip"
+      - "/opt/homebrew/bin/m68k-amiga-elf-strip"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-strip"
+      - "/usr/local/bin/m68k-amiga-elf-strip"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-strip"
+      - "/usr/bin/m68k-amiga-elf-strip"
+      - "/bin/m68k-amiga-elf-strip"
+      - "/usr/sbin/m68k-amiga-elf-strip"
+      - "/sbin/m68k-amiga-elf-strip"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-strip"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-strip"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-strip"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-strip"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-strip"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-strip"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/strip"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/strip"
+      - "/opt/homebrew/bin/strip"
+      - "/opt/homebrew/sbin/strip"
+      - "/usr/local/bin/strip"
+      - "/System/Cryptexes/App/usr/bin/strip"
+    found: "/usr/bin/strip"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-ld"
+      - "ld"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-ld"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-nm"
+      - "nm"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-nm"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-nm"
+      - "/opt/homebrew/bin/m68k-amiga-elf-nm"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-nm"
+      - "/usr/local/bin/m68k-amiga-elf-nm"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-nm"
+      - "/usr/bin/m68k-amiga-elf-nm"
+      - "/bin/m68k-amiga-elf-nm"
+      - "/usr/sbin/m68k-amiga-elf-nm"
+      - "/sbin/m68k-amiga-elf-nm"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-nm"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-nm"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-nm"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-nm"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-nm"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-nm"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/nm"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/nm"
+      - "/opt/homebrew/bin/nm"
+      - "/opt/homebrew/sbin/nm"
+      - "/usr/local/bin/nm"
+      - "/System/Cryptexes/App/usr/bin/nm"
+    found: "/usr/bin/nm"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-objdump"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-objcopy"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-objcopy"
+      - "/opt/homebrew/bin/m68k-amiga-elf-objcopy"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-objcopy"
+      - "/usr/local/bin/m68k-amiga-elf-objcopy"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-objcopy"
+      - "/usr/bin/m68k-amiga-elf-objcopy"
+      - "/bin/m68k-amiga-elf-objcopy"
+      - "/usr/sbin/m68k-amiga-elf-objcopy"
+      - "/sbin/m68k-amiga-elf-objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-objcopy"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-objcopy"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-objcopy"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-objcopy"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/objcopy"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/opt/homebrew/sbin/objcopy"
+      - "/usr/local/bin/objcopy"
+      - "/System/Cryptexes/App/usr/bin/objcopy"
+      - "/usr/bin/objcopy"
+      - "/bin/objcopy"
+      - "/usr/sbin/objcopy"
+      - "/sbin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/objcopy"
+      - "/opt/homebrew/opt/node@18/bin/objcopy"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-readelf"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-readelf"
+      - "/opt/homebrew/bin/m68k-amiga-elf-readelf"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-readelf"
+      - "/usr/local/bin/m68k-amiga-elf-readelf"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-readelf"
+      - "/usr/bin/m68k-amiga-elf-readelf"
+      - "/bin/m68k-amiga-elf-readelf"
+      - "/usr/sbin/m68k-amiga-elf-readelf"
+      - "/sbin/m68k-amiga-elf-readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-readelf"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-readelf"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-readelf"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-readelf"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/readelf"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/opt/homebrew/sbin/readelf"
+      - "/usr/local/bin/readelf"
+      - "/System/Cryptexes/App/usr/bin/readelf"
+      - "/usr/bin/readelf"
+      - "/bin/readelf"
+      - "/usr/sbin/readelf"
+      - "/sbin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/readelf"
+      - "/opt/homebrew/opt/node@18/bin/readelf"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/readelf"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-dlltool"
+      - "/opt/homebrew/bin/m68k-amiga-elf-dlltool"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-dlltool"
+      - "/usr/local/bin/m68k-amiga-elf-dlltool"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-dlltool"
+      - "/usr/bin/m68k-amiga-elf-dlltool"
+      - "/bin/m68k-amiga-elf-dlltool"
+      - "/usr/sbin/m68k-amiga-elf-dlltool"
+      - "/sbin/m68k-amiga-elf-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-dlltool"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-dlltool"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-dlltool"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-dlltool"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/opt/homebrew/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/dlltool"
+      - "/opt/homebrew/opt/node@18/bin/dlltool"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    found: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-addr2line"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-tapi"
+      - "tapi"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-tapi"
+      - "/opt/homebrew/bin/m68k-amiga-elf-tapi"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-tapi"
+      - "/usr/local/bin/m68k-amiga-elf-tapi"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-tapi"
+      - "/usr/bin/m68k-amiga-elf-tapi"
+      - "/bin/m68k-amiga-elf-tapi"
+      - "/usr/sbin/m68k-amiga-elf-tapi"
+      - "/sbin/m68k-amiga-elf-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-tapi"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-tapi"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-tapi"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-tapi"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/tapi"
+      - "/opt/homebrew/opt/node@18/bin/tapi"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-gcc-ar-14.2"
+      - "m68k-amiga-elf-gcc-ar-14"
+      - "m68k-amiga-elf-gcc-ar14"
+      - "m68k-amiga-elf-gcc-ar"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/sbin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar-14.2"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar-14.2"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar-14.2"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar-14"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar-14"
+      - "/sbin/m68k-amiga-elf-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar-14"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar-14"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar-14"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar14"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar14"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar14"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar14"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar14"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar14"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar14"
+      - "/bin/m68k-amiga-elf-gcc-ar14"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar14"
+      - "/sbin/m68k-amiga-elf-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar14"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar14"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar14"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar14"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar"
+      - "/sbin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-gcc-ranlib-14.2"
+      - "m68k-amiga-elf-gcc-ranlib-14"
+      - "m68k-amiga-elf-gcc-ranlib14"
+      - "m68k-amiga-elf-gcc-ranlib"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib-14.2"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib-14"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib-14"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib-14"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib14"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib14"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib14"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib14"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib14"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/CMakeScratch/TryCompile-1TtYBU"
+      binary: "/Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/CMakeScratch/TryCompile-1TtYBU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,--emit-relocs,-Ttext=0,--gc-sections"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/CMakeScratch/TryCompile-1TtYBU'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5b039/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5b039.dir/build.make CMakeFiles/cmTC_5b039.dir/build
+        Building C object CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj
+        /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc --sysroot=/opt/m68k-generic -DBARTMAN_GCC  -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections    -v -MD -MT CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc
+        Target: m68k-amiga-elf
+        Configured with: ../gcc/configure --disable-clocale --disable-gcov --disable-libada --disable-libgomp --disable-libsanitizer --disable-libssp --disable-libvtv --disable-multilib --disable-nls --disable-threads --enable-languages=c,c++ --enable-lto --enable-static --prefix=/Users/runner/work/vscode-amiga-debug/vscode-amiga-debug/output --target=m68k-amiga-elf --with-cpu=68000
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/'
+         /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/m68k-amiga-elf/14.2.0/cc1 -quiet -v -iprefix /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/ -isysroot /opt/m68k-generic -MD CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.d -MMD CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.d -MF CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d -MP -MT CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -D BARTMAN_GCC /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5b039.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=68000 -Wno-unused-function -Wno-volatile-register-var -version -fomit-frame-pointer -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections -o /var/folders/g7/cdj_d1d12376r1w1wrgfv5pm0000gp/T//ccnwovPe.s
+        GNU C17 (GCC) version 14.2.0 (m68k-amiga-elf)
+        	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/include"
+        ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/include"
+        ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed"
+        ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include"
+        ignoring nonexistent directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include
+         /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed
+         /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include
+        End of search list.
+        Compiler executable checksum: 443132064eec7ca19ef2ad298046014d
+        COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/'
+         /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/as -mcpu=68000 -o CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj /var/folders/g7/cdj_d1d12376r1w1wrgfv5pm0000gp/T//ccnwovPe.s
+        COMPILER_PATH=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/m68k-amiga-elf/14.2.0/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/
+        LIBRARY_PATH=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.'
+        Linking C static library libcmTC_5b039.a
+        /opt/homebrew/bin/cmake -P CMakeFiles/cmTC_5b039.dir/cmake_clean_target.cmake
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b039.dir/link.txt --verbose=1
+        warning: /Library/Developer/CommandLineTools/usr/bin/ranlib: archive library: libcmTC_5b039.a the table of contents is empty (no object file members in the library define global symbols)
+        /usr/bin/ar qc libcmTC_5b039.a CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj
+        /usr/bin/ranlib libcmTC_5b039.a
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include]
+          add: [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed]
+          add: [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include]
+        end of search list found
+        collapse include dir [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include] ==> [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/lib/gcc/m68k-amiga-elf/14.2.0/include]
+        collapse include dir [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed] ==> [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/lib/gcc/m68k-amiga-elf/14.2.0/include-fixed]
+        collapse include dir [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include] ==> [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/m68k-amiga-elf/sys-include]
+        implicit include dirs: [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/lib/gcc/m68k-amiga-elf/14.2.0/include;/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/lib/gcc/m68k-amiga-elf/14.2.0/include-fixed;/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/m68k-amiga-elf/sys-include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/matt.swart/Source/Amiga/PaperTanks/CMakeFiles/CMakeScratch/TryCompile-1TtYBU']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5b039/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5b039.dir/build.make CMakeFiles/cmTC_5b039.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc --sysroot=/opt/m68k-generic -DBARTMAN_GCC  -MP -MMD -m68000 -fomit-frame-pointer -nostdlib -Wno-unused-function -Wno-volatile-register-var -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections    -v -MD -MT CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc]
+        ignore line: [Target: m68k-amiga-elf]
+        ignore line: [Configured with: ../gcc/configure --disable-clocale --disable-gcov --disable-libada --disable-libgomp --disable-libsanitizer --disable-libssp --disable-libvtv --disable-multilib --disable-nls --disable-threads --enable-languages=c c++ --enable-lto --enable-static --prefix=/Users/runner/work/vscode-amiga-debug/vscode-amiga-debug/output --target=m68k-amiga-elf --with-cpu=68000]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/']
+        ignore line: [ /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/m68k-amiga-elf/14.2.0/cc1 -quiet -v -iprefix /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/ -isysroot /opt/m68k-generic -MD CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.d -MMD CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.d -MF CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d -MP -MT CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj -D BARTMAN_GCC /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5b039.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=68000 -Wno-unused-function -Wno-volatile-register-var -version -fomit-frame-pointer -fno-tree-loop-distribution -flto -fwhole-program -fdata-sections -ffunction-sections -o /var/folders/g7/cdj_d1d12376r1w1wrgfv5pm0000gp/T//ccnwovPe.s]
+        ignore line: [GNU C17 (GCC) version 14.2.0 (m68k-amiga-elf)]
+        ignore line: [	compiled by GNU C version Apple LLVM 15.0.0 (clang-1500.1.0.2.5)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/include"]
+        ignore line: [ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/include"]
+        ignore line: [ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include"]
+        ignore line: [ignoring nonexistent directory "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/../../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include]
+        ignore line: [ /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/include-fixed]
+        ignore line: [ /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/sys-include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 443132064eec7ca19ef2ad298046014d]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/']
+        ignore line: [ /Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/as -mcpu=68000 -o CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj /var/folders/g7/cdj_d1d12376r1w1wrgfv5pm0000gp/T//ccnwovPe.s]
+        ignore line: [COMPILER_PATH=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/m68k-amiga-elf/14.2.0/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../libexec/gcc/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/bin/]
+        ignore line: [LIBRARY_PATH=/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/:/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/../lib/gcc/m68k-amiga-elf/14.2.0/../../../../m68k-amiga-elf/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/m68k-generic' '-D' 'BARTMAN_GCC' '-MP' '-MMD' '-mcpu=68000' '-fomit-frame-pointer' '-nostdlib' '-Wno-unused-function' '-Wno-volatile-register-var' '-fno-tree-loop-distribution' '-flto' '-fwhole-program' '-fdata-sections' '-ffunction-sections' '-v' '-MD' '-MT' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-MF' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj.d' '-o' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C static library libcmTC_5b039.a]
+        ignore line: [/opt/homebrew/bin/cmake -P CMakeFiles/cmTC_5b039.dir/cmake_clean_target.cmake]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b039.dir/link.txt --verbose=1]
+        ignore line: [warning: /Library/Developer/CommandLineTools/usr/bin/ranlib: archive library: libcmTC_5b039.a the table of contents is empty (no object file members in the library define global symbols)]
+        ignore line: [/usr/bin/ar qc libcmTC_5b039.a CMakeFiles/cmTC_5b039.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/usr/bin/ranlib libcmTC_5b039.a]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindGit.cmake:86 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:1874 (find_package)"
+      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:1609 (__FetchContent_populateSubbuild)"
+      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2145:EVAL:2 (__FetchContent_doPopulation)"
+      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2145 (cmake_language)"
+      - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2384 (__FetchContent_Populate)"
+      - "external/ACE/cmake/CPM.cmake:1114 (FetchContent_MakeAvailable)"
+      - "external/ACE/cmake/CPM.cmake:895 (cpm_fetch_package)"
+      - "external/ACE/CMakeLists.txt:90 (CPMAddPackage)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/sbin/"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/git"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/sbin/git"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/git"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/git"
+    found: "/opt/homebrew/bin/git"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "_deps/bartman_gcc_support-src/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      m68k-amiga-elf-gcc (GCC) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "_deps/bartman_gcc_support-src/CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-gcc-ar-"
+      - "m68k-amiga-elf-gcc-ar-"
+      - "m68k-amiga-elf-gcc-ar"
+      - "m68k-amiga-elf-gcc-ar"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/bin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar-"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar-"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/bin/m68k-amiga-elf-gcc-ar-"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/sbin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar-"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar-"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar-"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar"
+      - "/sbin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ar"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/bin/m68k-amiga-elf-gcc-ar"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ar"
+      - "/sbin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ar"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ar"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ar"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ar"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ar"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
+      - "_deps/bartman_gcc_support-src/CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ASM_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m68k-amiga-elf-gcc-ranlib-"
+      - "m68k-amiga-elf-gcc-ranlib-"
+      - "m68k-amiga-elf-gcc-ranlib"
+      - "m68k-amiga-elf-gcc-ranlib"
+    candidate_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/opt/node@18/bin/"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+    searched_directories:
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib-"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib-"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib-"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib-"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib"
+      - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/System/Cryptexes/App/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/usr/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/sbin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/m68k-amiga-elf-gcc-ranlib"
+      - "/opt/homebrew/opt/node@18/bin/m68k-amiga-elf-gcc-ranlib"
+      - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/m68k-amiga-elf-gcc-ranlib"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/opt/node@18/bin"
+        - "/Users/matt.swart/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/opt/homebrew/opt/node@18/bin"
+      CMAKE_INSTALL_PREFIX: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt/usr"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/bin"
+      CMAKE_SYSROOT: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+      CMAKE_FIND_ROOT_PATH: "/Users/matt.swart/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt"
+...

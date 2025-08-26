@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/matt.swart/Source/Amiga/PaperTanks/cmake_install.cmake",
+		"/Users/matt.swart/Source/Amiga/PaperTanks/ace/cmake_install.cmake",
+		"/Users/matt.swart/Source/Amiga/PaperTanks/_deps/bartman_gcc_support-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
