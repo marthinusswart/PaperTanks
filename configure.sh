@@ -49,8 +49,10 @@ if [ $? -eq 0 ]; then
         echo ""
         echo "🎉 Build successful!"
         echo ""
-        echo "Executables created in workspace directory:"
-        ls -la hello.elf hello.exe 2>/dev/null || ls -la hello* 2>/dev/null
+        echo "Executables created in ./bin/ directory:"
+        if [ -d "./bin" ]; then
+            ls -la ./bin/hello.elf ./bin/hello.exe 2>/dev/null || ls -la ./bin/hello* 2>/dev/null
+        fi
         echo ""
         echo "Build artifacts organized in ./build/ directory:"
         if [ -d "./build" ]; then
@@ -64,7 +66,7 @@ if [ $? -eq 0 ]; then
         echo "You can also build manually with:"
         echo "  make"
         echo ""
-        echo "Note: Build artifacts are automatically moved to ./build/ after compilation."
+        echo "Note: Build artifacts are automatically moved to ./build/ and executables to ./bin/ after compilation."
         echo "This keeps the workspace root clean while maintaining ACE's in-source build requirements."
     else
         echo ""

@@ -57,6 +57,9 @@ dkms.conf
 # Build directory - contains all build artifacts moved post-build
 build/
 
+# Bin directory - contains executables moved post-build
+bin/
+
 # CMake build artifacts (in case they remain in root temporarily)
 CMakeFiles/
 CMakeCache.txt

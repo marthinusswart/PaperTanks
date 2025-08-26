@@ -6,7 +6,9 @@ string(TOLOWER ${PROJECT_NAME} PROJECT_NAME_LOWER)
 
 # Create build directory for organizing build artifacts
 set(BUILD_DIR "${CMAKE_SOURCE_DIR}/build")
+set(BIN_DIR "${CMAKE_SOURCE_DIR}/bin")
 file(MAKE_DIRECTORY ${BUILD_DIR})
+file(MAKE_DIRECTORY ${BIN_DIR})
 
 if(NOT AMIGA)
 	message(SEND_ERROR "This project only compiles for Amiga")
@@ -102,6 +104,18 @@ add_custom_command(
     "${BUILD_DIR}/_deps"
   COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/_deps"
   
-  COMMENT "Moving build artifacts to build directory"
+  # Move executables to bin directory
+  COMMAND ${CMAKE_COMMAND} -E echo "Moving executables to bin directory..."
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/${GAME_LINKED}"
+    "${BIN_DIR}/${GAME_LINKED}"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/${GAME_LINKED}"
+  
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/${GAME_EXE}"
+    "${BIN_DIR}/${GAME_EXE}"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/${GAME_EXE}"
+  
+  COMMENT "Moving build artifacts to build directory and executables to bin directory"
   VERBATIM
 )
