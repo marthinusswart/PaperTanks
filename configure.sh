@@ -38,8 +38,22 @@ cmake --fresh -B build \
 if [ $? -eq 0 ]; then
     echo ""
     echo "✅ CMake configuration successful!"
-    echo "You can now build the project with:"
-    echo "  cmake --build build"
+    echo "Building the project..."
+    echo ""
+    
+    # Build the project
+    cmake --build build
+    
+    if [ $? -eq 0 ]; then
+        echo ""
+        echo "🎉 Build successful!"
+        echo "Executables created in build/ directory:"
+        ls -la build/hello.elf build/hello.exe 2>/dev/null || ls -la build/hello* 2>/dev/null
+    else
+        echo ""
+        echo "❌ Build failed!"
+        exit 1
+    fi
 else
     echo ""
     echo "❌ CMake configuration failed!"
