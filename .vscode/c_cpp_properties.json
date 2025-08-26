@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Amiga CMake",
+            "includePath": [
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/external/ACE/include",
+                "${workspaceFolder}/external/ACE/include/mini_std"                
+            ],
+            "defines": [
+                "AMIGA",
+                "__mc68000__"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compilerArgs": [
+                "-m68020",
+                "-fomit-frame-pointer"
+            ]
+        }
+    ],
+    "version": 4
+}
