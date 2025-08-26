@@ -4,6 +4,10 @@ project(hello LANGUAGES C)
 # Lowercase project name for binaries and packaging
 string(TOLOWER ${PROJECT_NAME} PROJECT_NAME_LOWER)
 
+# Create build directory for organizing build artifacts
+set(BUILD_DIR "${CMAKE_SOURCE_DIR}/build")
+file(MAKE_DIRECTORY ${BUILD_DIR})
+
 if(NOT AMIGA)
 	message(SEND_ERROR "This project only compiles for Amiga")
 endif()
@@ -47,3 +51,57 @@ else()
 endif()
 
 target_link_libraries(${GAME_LINKED} ace)
+
+# Post-build step to organize build artifacts
+add_custom_command(
+  TARGET ${GAME_LINKED} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E echo "Organizing build artifacts..."
+  
+  # Move ace directory to build folder
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/ace"
+    "${BUILD_DIR}/ace"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/ace"
+  
+  # Move CMakeFiles directory to build folder
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/CMakeFiles"
+    "${BUILD_DIR}/CMakeFiles"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/CMakeFiles"
+  
+  # Move CPM_modules directory to build folder
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/CPM_modules"
+    "${BUILD_DIR}/CPM_modules"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/CPM_modules"
+  
+  # Move other build artifacts
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/cmake_install.cmake"
+    "${BUILD_DIR}/cmake_install.cmake"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/cmake_install.cmake"
+  
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/CMakeCache.txt"
+    "${BUILD_DIR}/CMakeCache.txt"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/CMakeCache.txt"
+  
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/Makefile"
+    "${BUILD_DIR}/Makefile"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/Makefile"
+  
+  COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/cpm-package-lock.cmake"
+    "${BUILD_DIR}/cpm-package-lock.cmake"
+  COMMAND ${CMAKE_COMMAND} -E remove -f "${CMAKE_SOURCE_DIR}/cpm-package-lock.cmake"
+  
+  # Move _deps directory to build folder
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/_deps"
+    "${BUILD_DIR}/_deps"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "${CMAKE_SOURCE_DIR}/_deps"
+  
+  COMMENT "Moving build artifacts to build directory"
+  VERBATIM
+)

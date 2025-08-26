@@ -27,7 +27,8 @@ echo "Found Amiga toolchain at: $AMIGA_TOOLCHAIN_PATH"
 echo "Configuring CMake..."
 
 # Configure CMake with the correct toolchain settings
-cmake --fresh -B build \
+# Note: The ACE library forces an in-source build, so files will be generated in the workspace root
+cmake --fresh \
     -G "Unix Makefiles" \
     -DCMAKE_TOOLCHAIN_FILE=external/AmigaCMakeCrossToolchains/m68k-bartman.cmake \
     -DTOOLCHAIN_PATH="$AMIGA_TOOLCHAIN_PATH" \
@@ -42,13 +43,29 @@ if [ $? -eq 0 ]; then
     echo ""
     
     # Build the project
-    cmake --build build
+    make
     
     if [ $? -eq 0 ]; then
         echo ""
         echo "🎉 Build successful!"
-        echo "Executables created in build/ directory:"
-        ls -la build/hello.elf build/hello.exe 2>/dev/null || ls -la build/hello* 2>/dev/null
+        echo ""
+        echo "Executables created in workspace directory:"
+        ls -la hello.elf hello.exe 2>/dev/null || ls -la hello* 2>/dev/null
+        echo ""
+        echo "Build artifacts organized in ./build/ directory:"
+        if [ -d "./build" ]; then
+            echo "  - ace/"
+            echo "  - CMakeFiles/"
+            echo "  - CPM_modules/"
+            echo "  - _deps/"
+            echo "  - Various CMake files"
+        fi
+        echo ""
+        echo "You can also build manually with:"
+        echo "  make"
+        echo ""
+        echo "Note: Build artifacts are automatically moved to ./build/ after compilation."
+        echo "This keeps the workspace root clean while maintaining ACE's in-source build requirements."
     else
         echo ""
         echo "❌ Build failed!"

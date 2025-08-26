@@ -54,7 +54,20 @@ dkms.conf
 # debug information files
 *.dwo
 
-build/.cmake/*
-build/CMakeFiles/*
-build/CMakeCache.txt
+# Build directory - contains all build artifacts moved post-build
+build/
+
+# CMake build artifacts (in case they remain in root temporarily)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+cpm-package-lock.cmake
+_deps/
+
+# ACE build artifacts
+ace/
+
+# CPM modules
+CPM_modules/
 
