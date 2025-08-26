@@ -41,6 +41,7 @@ To do so on a per-project basis:
 
 - Create a folder `.vscode` in your project
 - Create a file `.vscode/cmake-kits.json` with content as follows.
+
   - The only reason there are two entries in configuration file is because PATH on Windows needs `;` as separator, and on Unix it's `:`. If you intend to build your project on a single platform, you can skip the unneeded entry.
   - Adapt the path to `AmigaCMakeCrossToolchains` to match where you cloned that repository.
   - Note that this configuration assumes that you have MinGW toolchain installed. You may want to replace `preferredGenerator` with `ninja` if you run into problems with it, use non-GCC compiler for native programs or you want faster building times. In this case, download Ninja from [its releases page](https://github.com/ninja-build/ninja/releases), point your system PATH to its directory and restart vscode before proceeding.
@@ -64,7 +65,7 @@ To do so on a per-project basis:
       "keep": true
     },
     {
-      "name": "GCC Bartman m68k Unix",
+      "name": "GCC Bartman m68k MacOS",
       "toolchainFile": "${workspaceFolder}/deps/AmigaCMakeCrossToolchains/m68k-bartman.cmake",
       "environmentVariables": {
         "PATH": "${command:amiga.bin-path}/opt/bin:${command:amiga.bin-path}:${command:amiga.bin-path}/opt/m68k-amiga-elf/bin:${env:PATH}"
@@ -216,23 +217,23 @@ The CMake kit config is as follows:
 ```json5
 [
   {
-    "name": "Some other compiler which was automatically detected",
+    name: "Some other compiler which was automatically detected",
     // Some other fields...
   },
   {
-    "name": "GCC for m68k-amigaos 6.5.0b",
-    "compilers": {
-      "C": "/opt/amiga/bin/m68k-amigaos-gcc",
-      "CXX": "/opt/amiga/bin/m68k-amigaos-g++"
+    name: "GCC for m68k-amigaos 6.5.0b",
+    compilers: {
+      C: "/opt/amiga/bin/m68k-amigaos-gcc",
+      CXX: "/opt/amiga/bin/m68k-amigaos-g++",
     },
-    "toolchainFile": "/path/to/AmigaCMakeCrossToolchains/m68k-amigaos.cmake",
-    "cmakeSettings": {
-      "M68K_CPU": "68000",
-      "M68K_FPU": "soft",
-      "M68K_CRT": "nix13",
-      "TOOLCHAIN_PREFIX": "m68k-amigaos",
-      "TOOLCHAIN_PATH": "/opt/amiga"
-    }
-  }
+    toolchainFile: "/path/to/AmigaCMakeCrossToolchains/m68k-amigaos.cmake",
+    cmakeSettings: {
+      M68K_CPU: "68000",
+      M68K_FPU: "soft",
+      M68K_CRT: "nix13",
+      TOOLCHAIN_PREFIX: "m68k-amigaos",
+      TOOLCHAIN_PATH: "/opt/amiga",
+    },
+  },
 ]
 ```

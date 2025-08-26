@@ -44,7 +44,7 @@ Modified [`.vscode/cmake-kits.json`](.vscode/cmake-kits.json) to use `${env:HOME
 
 ```json
 {
-  "name": "GCC Bartman m68k Unix",
+  "name": "GCC Bartman m68k MacOS",
   "toolchainFile": "${workspaceFolder}/external/AmigaCMakeCrossToolchains/m68k-bartman.cmake",
   "cmakeSettings": {
     "TOOLCHAIN_PATH": "${env:HOME}/.vscode/extensions/bartmanabyss.amiga-debug-1.7.9/bin/darwin/opt",

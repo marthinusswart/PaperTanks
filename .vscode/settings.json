@@ -1,5 +1,14 @@
 {
     "files.associations": {
         "main.h": "c"
+    },
+    "cmake.configureOnOpen": false,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "remote.WSL.fileWatcher.polling": true,
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/bin/**": true,
+        "**/.git/**": true
     }
 }

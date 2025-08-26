@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Configure Amiga Project (WSL2)",
+      "type": "shell",
+      "command": "./configure-wsl2.sh",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Amiga Project (WSL2)",
+      "type": "shell",
+      "command": "make",
+      "args": ["-j$(nproc)"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "Clean Build (WSL2)",
+      "type": "shell",
+      "command": "rm",
+      "args": ["-rf", "build", "bin"],
+      "group": "build"
+    },
+    {
+      "label": "Verify WSL2 Setup",
+      "type": "shell",
+      "command": "./verify_wsl2_setup.sh",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
