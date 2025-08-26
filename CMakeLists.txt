@@ -26,6 +26,13 @@ if(GAME_DEBUG)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -DGAME_DEBUG")
 endif()
 
+# ACE Debug flag - set to ON to enable ACE debugging
+# Must use CACHE BOOL FORCE to override ACE's default cached value
+set(ACE_DEBUG ON CACHE BOOL "Build with ACE-specific debug/safety functionality." FORCE)
+
+# ACE UAE Debug flag - set to ON to enable UAE debugging features
+# set(ACE_DEBUG_UAE ON)
+
 # ACE
 add_subdirectory(external/ACE ace)
 include_directories(external/ACE/include)
